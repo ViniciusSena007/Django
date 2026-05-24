@@ -1,6 +1,51 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-    <h1>Bem-vindo ao nosso site!</h1>
-    <p>Este é o conteúdo da página inicial.</p>
+<main>
+    <div class="container marketing"> <!-- Three columns of text below the carousel -->
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Aprenda e desenvolva aplicações <span
+                        class="text-body-secondary">modernas com python</span></h2>
+                <p class="lead">Aprenda Django e desenvolva aplicações web modernas com Python.
+                    Domine um dos frameworks mais utilizados do mercado criando projetos reais do zero. Aprenda a
+                    desenvolver sites completos, sistemas web, painéis administrativos e aplicações profissionais
+                    utilizando as melhores práticas do Django. Tudo isso com aulas práticas, didáticas e focadas no
+                    desenvolvimento real.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="{% static 'app/img/programa1.jfif' %}" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Crie projetos completos <span
+                        class="text-body-secondary">enquanto evolui como desenvolvedor.</span></h2>
+                <p class="lead">Durante os cursos, você aprenderá sobre autenticação de usuários, integração com banco
+                    de dados, sistema de login, templates, rotas, consumo e criação de APIs, organização de projetos e
+                    muito mais. Cada módulo foi pensado para transformar teoria em prática de forma simples e objetiva.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1"> <img src="{% static 'app/img/programa2.jpg' %}"
+                    class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Construa seu futuro na programação <span
+                        class="text-body-secondary">com Django.</span></h2>
+                <p class="lead">Seja você iniciante ou alguém buscando aperfeiçoar suas habilidades, nossos cursos
+                    oferecem uma trilha completa para acelerar sua evolução. Tenha acesso a conteúdos atualizados,
+                    exercícios práticos e projetos que irão fortalecer seu portfólio e preparar você para o mercado de
+                    tecnologia.</p>
+            </div>
+            <div class="col-md-5"> <img src="{% static 'app/img/programa3.jpg' %}" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+</main>
 {% endblock %}
