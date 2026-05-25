@@ -3,3 +3,14 @@ img{
     height:500px; 
     object-fit:cover;
 }
+
+.logo{
+    width: 290px;
+    height: 190px;
+    margin-top: 60px;
+    object-fit: cover;
+}
+.a {
+    text-decoration: none;
+    color: inherit;
+}
